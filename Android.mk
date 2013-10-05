@@ -130,6 +130,8 @@ LOCAL_C_INCLUDES := $(KERNEL_HEADERS)
 
 LOCAL_CFLAGS := 
 
+common_cflags += -Werror -Wno-error=unused-parameter
+
 LOCAL_SHARED_LIBRARIES := libcutils
 
 include $(BUILD_EXECUTABLE)
